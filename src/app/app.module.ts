@@ -20,11 +20,22 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomepageComponent } from './homepage/homepage.component';
+import { TasklistComponent } from './tasklist/tasklist.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DisplaytasksComponent } from './displaytasks/displaytasks.component';
+import { DisplaycompltasksComponent } from './displaycompltasks/displaycompltasks.component';
+import { DisplayincompltasksComponent } from './displayincompltasks/displayincompltasks.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent
+    HomepageComponent,
+    TasklistComponent,
+    DisplaytasksComponent,
+    DisplaycompltasksComponent,
+    DisplayincompltasksComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +55,9 @@ import { HomepageComponent } from './homepage/homepage.component';
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

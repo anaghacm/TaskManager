@@ -1,0 +1,40 @@
+<div class="parent pt-5">
+    <div class="child1">
+        <h1 style="color: rgb(228, 44, 112);">Tasks </h1>
+
+    </div>
+    <div class="child2">
+        <div>
+            <button type="button" class="btn" routerLink="/tasklist"
+                style="background-color: rgb(228, 44, 112); color: white;">Manage Tasks</button>
+        </div>
+    </div>
+    <div class="child3">
+        <div class="notask" *ngIf="notask==0">
+            <p>Oopz..! No <span style="color: rgb(228, 44, 112);">tasks</span> are available.</p>
+        </div>
+        <div class="tasks" *ngIf="notask==1">
+            <div class="table-responsive">
+                <table class="table caption-top">
+                    <thead>
+                        <tr>
+                            <th>Sl. No</th>
+                            <th>Task</th>
+                            <th>Completed</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let t of mapped;let i=index;"  [ngClass]="t.completed==false?'incompleted':''">
+                            <td>{{i+1}}</td>
+                            <td>{{t.task}}</td>
+                            <td>
+                                {{t.completed}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>

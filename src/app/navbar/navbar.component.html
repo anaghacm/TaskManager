@@ -1,0 +1,38 @@
+<!-- Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid justify-content-between">
+        <!-- Left elements -->
+        <div class="d-flex">
+            <!-- Brand -->
+            <a class="navbar-brand me-2 mb-1 d-flex align-items-center" routerLink="">
+                <i class="fa-solid fa-cubes-stacked ms-2" style="font-size: 30px;"></i>
+                <p class="ms-2">To Do</p>
+            </a>
+        </div>
+        <!-- Left elements -->
+
+        <!-- Right elements -->
+        <ul class="navbar-nav flex-row">
+            <li class="nav-item px-2 me-4 me-lg-1 active">
+                <a class="nav-link" routerLink="displaytasks">
+                    <span><i class="fa-solid fa-clipboard-list"></i></span>
+                    <span class="badge rounded-pill badge-notification bg-danger">{{total}}</span>
+                </a>
+            </li>
+            <li class="nav-item px-2 me-4 me-lg-1 active">
+                <a class="nav-link" routerLink="displaycompltasks">
+                    <span><i class="fa-solid fa-circle"></i></span>
+                    <span class="badge rounded-pill badge-notification bg-danger">{{compl}}</span>
+                </a>
+            </li>
+            <li class="nav-item px-2 me-4 me-lg-1 active">
+                <a class="nav-link" routerLink="displayincompltasks">
+                    <span><i class="fa-solid fa-circle-half-stroke"></i></span>
+                    <span class="badge rounded-pill badge-notification bg-danger">{{incompl}}</span>
+                </a>
+            </li>
+        </ul>
+        <!-- Right elements -->
+    </div>
+</nav>
+<!-- Navbar -->

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { GlobalComponent } from './global-component';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'taskManager';
-}
+ }
