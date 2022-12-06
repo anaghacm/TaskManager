@@ -25,7 +25,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DisplaytasksComponent } from './displaytasks/displaytasks.component';
 import { DisplaycompltasksComponent } from './displaycompltasks/displaycompltasks.component';
 import { DisplayincompltasksComponent } from './displayincompltasks/displayincompltasks.component';
-import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -34,8 +33,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     TasklistComponent,
     DisplaytasksComponent,
     DisplaycompltasksComponent,
-    DisplayincompltasksComponent,
-    NavbarComponent
+    DisplayincompltasksComponent
+    
   ],
   imports: [
     BrowserModule,
